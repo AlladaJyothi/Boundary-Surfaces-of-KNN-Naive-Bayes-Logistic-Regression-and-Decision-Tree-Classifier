@@ -33,7 +33,7 @@ elif data == 'moons':
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 def plot_decision_surface(X, y, model,title):
-    plot_decision_regions(X,y,clf = model)
+    plot_decision_regions(X,y,clf = model,colors="#7f7f7f,#bcbd22,#17becf")
     plt.show()
     plt.title(title)
 
