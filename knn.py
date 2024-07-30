@@ -11,7 +11,7 @@ from mlxtend.plotting import plot_decision_regions
 
 st.image("inno_image.webp",width=200)
 # Streamlit application
-st.title('Boundary Surfaces of KNN, Naive Bayes,Logistic Regression and Decision Tree Classifier')
+st.title('Boundary Surfaces Visualization')
 
 # Create a synthetic dataset
 data = st.sidebar.selectbox('type of data ', ('classification','circles','blobs', 'moons'))
