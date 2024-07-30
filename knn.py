@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from mlxtend.plotting import plot_decision_regions
 
-st.image(r"C:\Users\DELL\Pictures\inno_image.webp",width=200)
+st.image("inno_image.webp",width=200)
 # Streamlit application
 st.title('Boundary Surfaces of KNN, Naive Bayes,Logistic Regression and Decision Tree Classifier')
 
