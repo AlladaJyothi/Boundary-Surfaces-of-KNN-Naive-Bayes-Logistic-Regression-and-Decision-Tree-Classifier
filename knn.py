@@ -47,9 +47,10 @@ if classifier_name == 'KNN':
     weights = st.sidebar.selectbox('Weight Function', ('uniform', 'distance'))
     algorithm = st.sidebar.selectbox('Algorithm', ('auto', 'ball_tree', 'kd_tree', 'brute'))
     n_jobs = st.sidebar.number_input('Number of Parallel Jobs (n_jobs)', -1, 10, 1)
+    random_no=st.sidebar.number_input('Random State Number', 1,100)
     
     
-    knn = KNeighborsClassifier(n_neighbors=n_neighbors, weights=weights, algorithm=algorithm, n_jobs=n_jobs)
+    knn = KNeighborsClassifier(n_neighbors=n_neighbors, weights=weights, algorithm=algorithm, n_jobs=n_jobs,random_no=random_no)
     knn.fit(X_train, y_train)
     plot_decision_surface(X, y, knn,'KNeighborsClassifier')
     st.pyplot(plt,clear_figure=True)
